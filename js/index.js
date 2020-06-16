@@ -6,8 +6,12 @@ function sendMessage() {
     var message = document.getElementById("message").value;
 
     if((name != '') && (email != '') && (subject != '') && (message != '')) {
-        console.log(name, email, subject, message);
 
+        console.log(name, email, subject, message);
         document.getElementById('success').innerHTML = 'Successful!';
+    }
+
+    else {
+        document.getElementById('success').innerHTML = '';
     }
 }
