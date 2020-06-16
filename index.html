@@ -194,7 +194,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
+    <form action='' target='dummyframe'>
+      <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" id="name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" id="email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" id="subject" required name="Subject"></p>
@@ -203,6 +204,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <button class="w3-button w3-light-grey w3-padding-large" onclick="sendMessage()" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
+        <i id="success" class="success"></i>
       </p>
     </form>
   <!-- End Contact Section -->
